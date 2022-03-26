@@ -15,14 +15,16 @@
                 </tr>
 
                 <?php foreach($vehicles_list as $vehicle)  {
+
                     $year = $vehicle->getYear();
                     $model = $vehicle->getModel();
                     $formattedPrice = $vehicle->getFormattedPrice();
+
                     $make_name = $vehicle->getMake()->getName() ?? 'n/a';
                     $type_name = $vehicle->getType()->getName() ?? 'n/a';
                     $class_name = $vehicle->getClass()->getName() ?? 'n/a';
                 ?>
-                    <tr>
+                    <tr class ="text-light bg-dark">
                         <td><?= $year ?></td>
                         <td><?= $make_name ?></td>
                         <td><?= $model ?></td>

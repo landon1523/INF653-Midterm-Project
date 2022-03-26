@@ -1,6 +1,6 @@
 <?php
-    // require_once('util/secure_conn.php');       // Require secure connection
-    require_once('util/valid_admin.php');       // Require valid admin user
+     // require_once('util/secure_conn.php');       // Require secure connection
+     // require_once('util/valid_admin.php');       // Require valid admin user
 ?>
 
 <!DOCTYPE html>

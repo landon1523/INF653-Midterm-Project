@@ -39,6 +39,8 @@ switch ($action) {
                 $_SESSION['is_valid_admin'] = true;
                 header("Location: .?action=vehicles_list");
             }
+        } else {
+            
         }
         break;
     }

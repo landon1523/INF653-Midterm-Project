@@ -12,7 +12,7 @@
     <title>Zippy Used Autos</title>
 </head>
 <body class="p-4">
-    <header class="mb-2 border-bottom border-1 border-secondary d-flex flex-column flex-md-row-reverse justify-content-md-between align-items-md-center">
+    <header class="mb-2 border-bottom border-1 border-secondary d-flex flex-column flex-md-row-reverse justify-content-md-between align-items-md-center text-light bg-secondary">
         <?php if(!isset($_SESSION['userid']) &&
                 ($action != 'register' && $action != 'logout')) { ?>
 

@@ -2,6 +2,7 @@
     class TypesTable {
 
         public static function get_types() {
+
             $db = Database::getDB();
             $query = "SELECT * FROM types ORDER BY type_id";
             $statement = $db->prepare($query);
@@ -16,9 +17,11 @@
             }
 
             return $types;
+
         }
 
         public static function get_type($type_id) {
+
             $db = Database::getDB();
             $query = "SELECT * FROM types
                         WHERE type_id = :type_id";
@@ -30,9 +33,11 @@
 
             $type = new VehicleType($row['type_id'] ?? null, $row['type_name'] ?? null);
             return $type;
+
         }
 
         public static function add_type($type_name) {
+
             $db = Database::getDB();
             $count = 0;
             $query = "INSERT INTO types (type_name)
@@ -49,9 +54,11 @@
                 $statement->closeCursor();
             }
             return $count;
+
         }
 
         public static function delete_type($type_id) {
+
             $db = Database::getDB();
             $count = 0;
             $query = "DELETE FROM types
@@ -64,5 +71,6 @@
             $statement->closeCursor();
             return $count;
         }
+        
     }
 ?>

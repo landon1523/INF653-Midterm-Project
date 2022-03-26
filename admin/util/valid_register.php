@@ -1,5 +1,6 @@
 <?php
     class ValidRegister {
+
         private static function valid_username($username) {
 
             return (!$username || strlen($username) < 6) ? false : true;
@@ -37,4 +38,5 @@
 
             return $errors;
         }
+        
     }

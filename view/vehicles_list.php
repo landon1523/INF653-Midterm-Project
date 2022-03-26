@@ -5,6 +5,7 @@
     <div class="table_container table-responsive">
         <?php if (!empty($vehicles_list)) { ?>
             <table class="table table-hover align-middle">
+                
                 <tr>
                     <th>Year</th>
                     <th>Make</th>
@@ -32,6 +33,7 @@
                         <td><?= $class_name ?></td>
                         <td><?= $formattedPrice ?></td>
                     </tr>
+
                 <?php } ?>
             </table>
         <?php } else { ?>

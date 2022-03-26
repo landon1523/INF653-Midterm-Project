@@ -56,7 +56,7 @@ switch ($action) {
         $class_id = filter_input(INPUT_POST, 'class_id', FILTER_VALIDATE_INT);
         echo $year . $model . $price . $make_id . $type_id . $class_id;
 
-        if ($year && $model && $price && $make_id && $type_id && $class_id) {
+        if ($year && $model && $price) {
             $count = VehiclesTable::add_vehicle($year, $model, $price, $make_id, $type_id, $class_id);
             header("Location: .?added_vehicle={$count}");
         } else {

@@ -23,6 +23,8 @@ if (!$action) {
     $action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_STRING);
     if (!$action) {
         $action = 'vehicles_list';
+    } elseif ($action == "show_register") {
+        include('view/register.php');
     }
 }
 
